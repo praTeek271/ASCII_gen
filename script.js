@@ -103,3 +103,13 @@ sizeElem.addEventListener('input', () => {
     if( ! acsii ) return;
     showAcsii(sizeElem.value);
 });
+
+
+
+// Dark Mode Toggle Function
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const toggleButton = document.querySelector('.toggle-button');
+    toggleButton.classList.toggle('dark-mode', document.body.classList.contains('dark-mode'));
+}
+
