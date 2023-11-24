@@ -12,6 +12,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Verdana', sans-serif;
 }
 
 #canvas {
@@ -20,6 +21,7 @@ body {
     border: 1px solid #fff;
     border-radius: 5px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 #file {
@@ -35,3 +37,28 @@ body {
     max-width: 100%;
     width: 100%;
 }
+
+/* Animation for canvas */
+#canvas:hover {
+    transform: scale(1.05);
+}
+
+/* Floating Toggle Button */
+.toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.toggle-button.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
