@@ -11,13 +11,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #canvas {
-    max-height: 900px;
-    min-height: 600px;
-    width: 600px;
+    max-width: 100%;
     padding: 20px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -30,9 +28,10 @@ body {
     border-radius: 5px;
     color: #fff;
     margin-bottom: 20px;
-    width: 600px;
+    max-width: 100%;
 }
 
 #size {
-    width: 600px;
+    max-width: 100%;
+    width: 100%;
 }
